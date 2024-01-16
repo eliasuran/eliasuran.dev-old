@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.prose h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose p:not(:is(h2, h3, h4, h5, h6) + p) {
+  margin-top: 1rem;
+}
+
+.prose :is(ul, ol) {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.prose :is(ul, ol) li {
+  margin-block: 0.25rem;
+  padding-inline-start: 0.5rem;
+}
+
+.prose pre {
+  overflow-x: scroll;
+  max-inline-size: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  tab-size: 2;
+}
