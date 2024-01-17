@@ -36,7 +36,7 @@
 		</div>
 		<div class="flex gap-2 self-end">
 			<LinkIcon href="https://github.com/eliasuran" icon="mdi:github" />
-			<LinkIcon href="https://www.linkedin.com/in/elias-uran-358987299/" icon="mdi:linkedin" />
+			<LinkIcon href="https://www.linkedin.com/in/elias-uran-400590262/" icon="mdi:linkedin" />
 		</div>
 	</div>
 </main>
