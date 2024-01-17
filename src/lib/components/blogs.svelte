@@ -5,7 +5,7 @@
 </script>
 
 <a
-	href={`/blog/${post.slug}`}
+	href={`/blogg/${post.slug}`}
 	class="h-28 flex flex-col gap-2 text-start text-text/70 group hover:text-text duration-500"
 >
 	<div class="w-full">

@@ -6,9 +6,14 @@
 	import Projects from '$lib/components/projects.svelte';
 	import Blogs from '$lib/components/blogs.svelte';
 	import type { PostData } from '$lib/types/postdata.js';
+	import { fade } from 'svelte/transition';
 </script>
 
-<div class="w-full grid place-items-center">
+<div
+	in:fade={{ delay: 200, duration: 500 }}
+	out:fade={{ duration: 200 }}
+	class="w-full grid place-items-center"
+>
 	<div class="flex flex-col gap-6">
 		<!-- description -->
 		<p>
@@ -23,7 +28,7 @@
 			{/each}
 		</div>
 		<!-- blog -->
-		<h2 class="text-xl">blog</h2>
+		<h2 class="text-xl">blogg</h2>
 		<div class="w-full flex flex-col gap-4">
 			{#each posts as post}
 				<Blogs {post} />
